@@ -1,0 +1,226 @@
+/*
+common
+********************************/
+html,
+body {
+  height: 100%;
+}
+h1 {
+  margin: 0;
+  padding: 13px;
+  margin-left: -9px;
+}
+.title {
+  position: relative;
+  display: flex;
+  max-width: 598px;
+  height: fit-content;
+  border-top: 1px solid #ccc;
+  margin: 0 auto;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.blue-logo {
+  border-radius: 1px;
+  width: 40px;
+  position: relative;
+  padding: 10%;
+  margin: 1px;
+}
+
+.content {
+  max-width: 600px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/*
+posts
+********************************/
+.post_form {
+  padding: 10px 40px;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
+.posts_form input {
+  max-width: 30%;
+}
+
+.post_form input[type="text"] {
+  width: 86.3% !important;
+  background-color: rgb(255 255 255 / 42%);
+  font-size: 15px;
+}
+
+.post_form input[type="file"] {
+  margin-bottom: 0px;
+  border: 8px;
+  color: rgb(165, 165, 165);
+  overflow: hidden;
+}
+
+.post_form input[type="submit"] {
+  border-radius: 20px;
+  background-color: #209bf0;
+  width: 80px;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+}
+
+.post_form input {
+  width: 70%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.post_form textarea {
+  width: 86.3%;
+  height: 80px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+}
+
+.form-control {
+  /* display: block; */
+  width: 70%;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+}
+.form-control-sm {
+  /* min-height: calc(1.5em + 0.5rem + 2px); */
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border-radius: 0.2rem;
+}
+
+.edit_image {
+  border-radius: 20px;
+  max-width: 100%;
+  max-height: 70%;
+  width: 100%;
+  height: 74%;
+  object-fit: cover;
+}
+
+.btn {
+  background-color: rgb(29, 161, 242);
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  padding: 10px;
+  border: 1px solid rgb(29, 161, 242);
+}
+
+.btnn {
+  background-color: rgb(100, 101, 102);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  padding: 8px 15px;
+  border: 1px solid rgb(100, 101, 102);
+  text-decoration: none;
+  float: right;
+}
+
+.posts ul {
+  padding: 0;
+  margin: 0;
+}
+
+.posts li {
+  height: 380px;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 40px;
+  list-style: none;
+  position: relative;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.posts li .menu_icon {
+  width: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.posts li .menu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 15px;
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 10px 15px;
+  font-size: 13px;
+  border-radius: 3px;
+}
+
+.posts li .menu a {
+  text-decoration: none;
+}
+
+.posts li .logo {
+  flex-basis: 15%;
+  margin-left: -20px;
+}
+
+.posts li .logo img {
+  width: 75%;
+}
+
+.posts li .name_body {
+  flex-basis: 100%;
+}
+
+.posts li .name_body .name {
+  font-weight: bold;
+}
+
+.posts li .name_body .datetime {
+  color: grey;
+}
+
+.like {
+  height: 20px;
+  text-decoration: none;
+}
+
+.bodyimage {
+  border-radius: 20px;
+  max-width: 100%;
+  max-height: 70%;
+  width: 100%;
+  height: 74%;
+  object-fit: cover;
+}
+
+.editimage {
+  border-radius: 20px;
+  max-width: 100%;
+  max-height: 70%;
+  width: 100%;
+  height: 74%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 500px) {
+  .posts li .name .name_body {
+    font-size: 20px;
+  }
+}

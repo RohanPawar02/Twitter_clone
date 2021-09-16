@@ -1,0 +1,46 @@
+{% extends "base.html" %} {% block content %} {% load static %}
+<section class="title">
+  <a href="/">
+    <img
+      class="blue-logo"
+      src="/static/img/user.png"
+      alt="White twitter logo"
+    />
+  </a>
+  <h1>EDIT</h1>
+</section>
+  <section class="content">
+    <section class="post_form">
+      <form action="" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input
+        type="text"
+        name="name"
+        placeholder="Name"
+        value="{{posts.name}}"
+        required
+        col
+        />
+        <textarea
+        name="body"
+        rows="2"
+        placeholder="{{posts.body}}"
+        required
+        ></textarea>
+        <img src="{{posts.image.url}}" alt="" class="editimage" />
+        <input
+          type="file"
+          name="image"
+          class="bodyimage"
+          value="{{posts.image.url}}"
+        />
+        <div class="editfooter">
+          <input class="btn" type="submit" value="Update" />
+          <a href="{% url 'index' %}" class="btnn">Cancel</a>
+        </div>
+      </form>
+    </section>
+  </section>
+
+  {% endblock %}
+</section>
