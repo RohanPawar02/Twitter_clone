@@ -35,7 +35,9 @@
           <div class="name">{{ post.name }}</div>
           <div class="datetime">{{ post.created_at }}</div>
           <p>{{ post.body }}</p>
+          {% if post.image %}
           <img class="bodyimage" src="{{ post.image.url }}" />
+          {% endif %}
           <div class="bodylike">
             <a href="likes/{{ post.id }}">
               <img class="like" src="{% static 'img/heart.png' %}"
