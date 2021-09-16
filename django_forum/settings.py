@@ -131,6 +131,8 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+
 cloudinary.config(
     cloud_name="dwzjr9dg5",
     api_key="536672223265251",
